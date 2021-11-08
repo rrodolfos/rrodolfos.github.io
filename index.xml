@@ -1,0 +1,9 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Rodolfo Sauce-Guinand</title>
+        <link>https://rrodolfos.github.io/</link>
+        <description>Rodolfo Sauce-Guinand</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language>
+            <atom:link href="https://rrodolfos.github.io/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
+</rss>
