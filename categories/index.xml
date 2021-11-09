@@ -3,5 +3,12 @@
         <title>Categories - Category - Rodolfo Sauce-Guinand</title>
         <link>https://rrodolfos.github.io/categories/</link>
         <description>Categories - Category - Rodolfo Sauce-Guinand</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://rrodolfos.github.io/categories/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 Nov 2021 11:46:50 &#43;0100</lastBuildDate><atom:link href="https://rrodolfos.github.io/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>devops</title>
+    <link>https://rrodolfos.github.io/categories/devops/</link>
+    <pubDate>Tue, 09 Nov 2021 11:46:50 &#43;0100</pubDate><author>
+        <name>Author</name>
+    </author><guid>https://rrodolfos.github.io/categories/devops/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
 </rss>

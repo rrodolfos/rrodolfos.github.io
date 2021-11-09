@@ -2,7 +2,25 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://rrodolfos.github.io/categories/</loc><xhtml:link
+            <loc>https://rrodolfos.github.io/tags/ansible/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/tags/ansible/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/tags/ansible/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/authors/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/authors/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/authors/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/categories/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="es"
                         href="https://rrodolfos.github.io/es/categories/"
@@ -11,7 +29,61 @@
                     hreflang="en"
                     href="https://rrodolfos.github.io/categories/"
                     /></url><url>
-            <loc>https://rrodolfos.github.io/</loc><xhtml:link
+            <loc>https://rrodolfos.github.io/posts/ansible_jenkins_jcasc/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/posts/ansible_jenkins_jcasc/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/posts/ansible_jenkins_jcasc/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/categories/devops/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/categories/devops/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/categories/devops/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/tags/jcasc/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/tags/jcasc/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/tags/jcasc/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/tags/jenkins/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/tags/jenkins/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/tags/jenkins/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/posts/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/posts/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/authors/rodolfo/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/authors/rodolfo/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/authors/rodolfo/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="es"
                         href="https://rrodolfos.github.io/es/"
@@ -20,7 +92,7 @@
                     hreflang="en"
                     href="https://rrodolfos.github.io/"
                     /></url><url>
-            <loc>https://rrodolfos.github.io/tags/</loc><xhtml:link
+            <loc>https://rrodolfos.github.io/tags/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="es"
                         href="https://rrodolfos.github.io/es/tags/"
@@ -28,4 +100,13 @@
                     rel="alternate"
                     hreflang="en"
                     href="https://rrodolfos.github.io/tags/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/tags/vagrant/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/tags/vagrant/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/tags/vagrant/"
                     /></url></urlset>

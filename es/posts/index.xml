@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Todo Artículos - Rodolfo Sauce-Guinand</title>
+        <link>https://rrodolfos.github.io/es/posts/</link>
+        <description>Todo Artículos | Rodolfo Sauce-Guinand</description>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 09 Nov 2021 11:46:50 &#43;0100</lastBuildDate><atom:link href="https://rrodolfos.github.io/es/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Configurando jenkins con ansible y jenkins configuration as code en vagrant</title>
+    <link>https://rrodolfos.github.io/es/posts/ansible_jenkins_jcasc/</link>
+    <pubDate>Tue, 09 Nov 2021 11:46:50 &#43;0100</pubDate><author>
+                    <name>Rodolfo</name><uri>https://www.linkedin.com/in/rodolfosauceguinand/</uri><email>rrodolfos@gmail.com</email></author><guid>https://rrodolfos.github.io/es/posts/ansible_jenkins_jcasc/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/ansible_jenkins_jcasc.webp" referrerpolicy="no-referrer">
+            </div>Configurando jenkins con ansible y jenkins configuration as code en vagrant  git clone https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git  cd jenkins-single-vagrant-ansible  vagrant up  http://192.168.33.12:8080/ User: admin Password: admin  vagrant destroy ]]></description>
+</item></channel>
+</rss>
