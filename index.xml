@@ -12,6 +12,7 @@
                     <name>Rodolfo</name><uri>https://www.linkedin.com/in/rodolfosauceguinand/</uri><email>rrodolfos@gmail.com</email></author><guid>https://rrodolfos.github.io/posts/ansible_jenkins_jcasc/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/ansible_jenkins_jcasc.webp" referrerpolicy="no-referrer">
-            </div>Configuring jenkins with ansible and Jenkins configuration as code on vagrant  git clone https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git  cd jenkins-single-vagrant-ansible  vagrant up  http://192.168.33.12:8080/ User: admin Password: admin  vagrant destroy ]]></description>
+            </div>Configuring jenkins with ansible and Jenkins configuration as code on vagrant This repository (https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git) contains vagrant and ansible configuration to deploy and provision a single jenkins server with jenkins configuration as code (a.k.a. JCasC):
+ Jenkins Jenkins Configuration as Code (a.k.a. JCasC) Plugin  DISCLAIMER  This implementation is intended for testing / PoC / playing purposes only, this solution is not scalable or secure enough for live / production environments.]]></description>
 </item></channel>
 </rss>

@@ -31,7 +31,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/rrodolfos.github.io\/es\/posts\/ansible_jenkins_jcasc\/"
-        },"genre": "posts","keywords": "ansible, jenkins, jcasc, vagrant","wordcount":  25 ,
+        },"genre": "posts","keywords": "ansible, jenkins, jcasc, vagrant","wordcount":  324 ,
         "url": "https:\/\/rrodolfos.github.io\/es\/posts\/ansible_jenkins_jcasc\/","datePublished": "2021-11-09T11:46:50+01:00","dateModified": "2021-11-09T11:46:50+01:00","publisher": {
             "@type": "Organization",
             "name": "Autor"},"authors": [{
@@ -94,8 +94,8 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://rrodolfos.github.io/es/authors/rodolfo'>Rodolfo</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">incluido en <a href="/es/categories/devops/"><i class="far fa-folder fa-fw"></i>devops</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-09">2021-11-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2021-11-09">2021-11-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;25 palabras&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;Un minuto&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-09">2021-11-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2021-11-09">2021-11-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;324 palabras&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutos&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         data-src="/es/posts/ansible_jenkins_jcasc/ansible_jenkins_jcasc.webp"
@@ -108,16 +108,121 @@
                     <span>Contenido</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#advertencia">ADVERTENCIA</a></li>
+    <li><a href="#requerimientos">Requerimientos</a></li>
+    <li><a href="#qué-usé-para-esto">¿Qué usé para esto?</a></li>
+    <li><a href="#contenido">Contenido</a>
+      <ul>
+        <li><a href="#vagrantfile">Vagrantfile</a></li>
+      </ul>
+    </li>
+    <li><a href="#como-construirlo">Como construirlo</a>
+      <ul>
+        <li><a href="#jenkins">Jenkins</a></li>
+        <li><a href="#clonar-el-repository">Clonar el repository</a></li>
+        <li><a href="#cambiar-al-directorio-del-repositorio-clonado">Cambiar al directorio del repositorio clonado</a></li>
+        <li><a href="#crear-la-vm-en-vagrant-y-desplegar-jenkins">Crear la VM en vagrant y desplegar jenkins</a></li>
+        <li><a href="#chequear-la-vm">Chequear la VM</a></li>
+        <li><a href="#conectarse-a-jenkins">Conectarse a Jenkins</a></li>
+        <li><a href="#destruir-la-vm-en-vagrant">Destruir la VM en vagrant</a></li>
+      </ul>
+    </li>
+    <li><a href="#autor">Autor</a></li>
+  </ul>
+</nav></div>
             </div><div class="content" id="content"><h1 id="configurando-jenkins-con-ansible-y-jenkins-configuration-as-code-en-vagrant">Configurando jenkins con ansible y jenkins configuration as code en vagrant</h1>
-<pre tabindex="0"><code>  git clone https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git
-</code></pre><pre tabindex="0"><code>  cd jenkins-single-vagrant-ansible
-</code></pre><pre tabindex="0"><code>  vagrant up
-</code></pre><pre tabindex="0"><code>  http://192.168.33.12:8080/
-  User: admin
-  Password: admin
-</code></pre><pre tabindex="0"><code>  vagrant destroy
-</code></pre></div>
+<p>Este repositorio (<a href="https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git" target="_blank" rel="noopener noreffer">https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git</a>) contiene la configuración en vagrant y ansible para desplegar un servidor jenkins junto don el módulo jenkins configuration as code (a.k.a. JCasC):</p>
+<ul>
+<li><a href="https://www.jenkins.io/" target="_blank" rel="noopener noreffer">Jenkins</a></li>
+<li><a href="https://www.jenkins.io/projects/jcasc/" target="_blank" rel="noopener noreffer">Jenkins Configuration as Code (a.k.a. JCasC) Plugin</a></li>
+</ul>
+<h2 id="advertencia">ADVERTENCIA</h2>
+<blockquote>
+<p>Esta implementación esta destinada solo con el propósito de pruebas / PoC / juego, esta solución no es escalable o segura para ambientes de producción. Úselo a su propio riesgo. Happy hacking!.</p>
+</blockquote>
+<h2 id="requerimientos">Requerimientos</h2>
+<p>Los siguientes requerimientos son necesarios para desplegar y provisionar la VM Jenkins.</p>
+<ul>
+<li><a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreffer">VirtualBox</a></li>
+<li><a href="https://www.vagrantup.com/" target="_blank" rel="noopener noreffer">Vagrant</a></li>
+<li><a href="https://www.ansible.com/" target="_blank" rel="noopener noreffer">Ansible</a></li>
+</ul>
+<h2 id="qué-usé-para-esto">¿Qué usé para esto?</h2>
+<ul>
+<li>MacBook Pro 2015 CPU Core i5 8GB RAM</li>
+<li>OS GNU Linux/Debian 12 Bookworm 64bits</li>
+<li>VirtualBox 6.1.16</li>
+<li>Vagrant 2.2.14
+<ul>
+<li>Vagrant box debian/bullseye64</li>
+</ul>
+</li>
+<li>Ansible 2.10.8</li>
+</ul>
+<h2 id="contenido">Contenido</h2>
+<ul>
+<li>Vagrantfile</li>
+<li>ansible.cfg</li>
+<li>Playbook.yml</li>
+<li>Roles
+<ul>
+<li>common</li>
+<li>jenkins</li>
+</ul>
+</li>
+</ul>
+<h3 id="vagrantfile">Vagrantfile</h3>
+<p>La definición de la VM es la siguiente:</p>
+<ul>
+<li>jenkins
+<ul>
+<li>2 vcpu</li>
+<li>1024 RAM</li>
+<li>192.168.33.12 VM dirección ip</li>
+</ul>
+</li>
+</ul>
+<h2 id="como-construirlo">Como construirlo</h2>
+<h3 id="jenkins">Jenkins</h3>
+<p>Esto despliega (con ansible) una VM Servidor Jenkins como sigue:</p>
+<ul>
+<li>Instala las dependencias de Jenkins</li>
+<li>Copia la configuracion de Jenkins por defecto</li>
+<li>Crea el home de Jenkins</li>
+<li>Crea el directorio init.groove.d con el archivo de configuración (<a href="https://www.jenkins.io/doc/book/managing/groovy-hook-scripts/" target="_blank" rel="noopener noreffer">Groovy Hook Scripts</a>) para la instalación de los módulos (JCasC entre ellos) en el home de Jenkins</li>
+<li>Copia jenkins.yml para JCasC y la configuración &ldquo;automágica&rdquo; en el home de Jenkins</li>
+<li>Instala Jenkins</li>
+<li>Eliminar jenkins.yml</li>
+<li>Happy hacking!</li>
+</ul>
+<h3 id="clonar-el-repository">Clonar el repository</h3>
+<pre tabindex="0"><code>  $ git clone https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git
+</code></pre><h3 id="cambiar-al-directorio-del-repositorio-clonado">Cambiar al directorio del repositorio clonado</h3>
+<pre tabindex="0"><code>  $ cd jenkins-single-vagrant-ansible
+</code></pre><h3 id="crear-la-vm-en-vagrant-y-desplegar-jenkins">Crear la VM en vagrant y desplegar jenkins</h3>
+<p>Para niciar la VM</p>
+<pre tabindex="0"><code>  $ vagrant up
+</code></pre><blockquote>
+<p>Momento para un café!. En un MacBook Pro 2015 y 100Mbps de ancho de banda tomó ~6 minutos. No está incluida la descarga del box Vagrant (linux distro base).</p>
+</blockquote>
+<h3 id="chequear-la-vm">Chequear la VM</h3>
+<p>Para conectarse a la VM (ssh)</p>
+<pre tabindex="0"><code>  $ vagrant ssh
+</code></pre><h3 id="conectarse-a-jenkins">Conectarse a Jenkins</h3>
+<p>Para conectarse via navegador web</p>
+<pre tabindex="0"><code>  http://192.168.33.12:8080/
+</code></pre><p><code>Username:</code> admin
+<code>Password:</code> admin</p>
+<h3 id="destruir-la-vm-en-vagrant">Destruir la VM en vagrant</h3>
+<p>Para destruir la VM</p>
+<pre tabindex="0"><code>  $ vagrant destroy
+</code></pre><h2 id="autor">Autor</h2>
+<blockquote>
+<p>Rodolfo Sauce-Guinand - rrodolfos gmail com</p>
+</blockquote>
+</div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">

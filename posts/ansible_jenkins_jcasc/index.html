@@ -31,7 +31,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/rrodolfos.github.io\/posts\/ansible_jenkins_jcasc\/"
-        },"genre": "posts","keywords": "ansible, jenkins, jcasc, vagrant","wordcount":  25 ,
+        },"genre": "posts","keywords": "ansible, jenkins, jcasc, vagrant","wordcount":  298 ,
         "url": "https:\/\/rrodolfos.github.io\/posts\/ansible_jenkins_jcasc\/","datePublished": "2021-11-09T11:46:50+01:00","dateModified": "2021-11-09T11:46:50+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"authors": [{
@@ -94,8 +94,8 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://rrodolfos.github.io/authors/rodolfo'>Rodolfo</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/devops/"><i class="far fa-folder fa-fw"></i>devops</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-09">2021-11-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2021-11-09">2021-11-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;25 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-09">2021-11-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2021-11-09">2021-11-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;298 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         data-src="/posts/ansible_jenkins_jcasc/ansible_jenkins_jcasc.webp"
@@ -108,16 +108,121 @@
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
                 </div>
-                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#disclaimer">DISCLAIMER</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#what-did-i-use-for-this">what did I use for this?</a></li>
+    <li><a href="#included-content">Included content</a>
+      <ul>
+        <li><a href="#vagrantfile">Vagrantfile</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-to-build-it">How to build it</a>
+      <ul>
+        <li><a href="#jenkins">Jenkins</a></li>
+        <li><a href="#clone-this-repository">Clone this repository</a></li>
+        <li><a href="#change-to-the-cloned-repository-directory">Change to the cloned repository directory</a></li>
+        <li><a href="#create-vagrant-vm-and-deploy-jenkins">Create vagrant VM and deploy jenkins</a></li>
+        <li><a href="#check-the-vm">Check the VM</a></li>
+        <li><a href="#connect-to-jenkins">Connect to Jenkins</a></li>
+        <li><a href="#destroy-vagrant-vm">Destroy vagrant VM</a></li>
+      </ul>
+    </li>
+    <li><a href="#author">Author</a></li>
+  </ul>
+</nav></div>
             </div><div class="content" id="content"><h1 id="configuring-jenkins-with-ansible-and-jenkins-configuration-as-code-on-vagrant">Configuring jenkins with ansible and Jenkins configuration as code on vagrant</h1>
-<pre tabindex="0"><code>  git clone https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git
-</code></pre><pre tabindex="0"><code>  cd jenkins-single-vagrant-ansible
-</code></pre><pre tabindex="0"><code>  vagrant up
-</code></pre><pre tabindex="0"><code>  http://192.168.33.12:8080/
-  User: admin
-  Password: admin
-</code></pre><pre tabindex="0"><code>  vagrant destroy
-</code></pre></div>
+<p>This repository (<a href="https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git" target="_blank" rel="noopener noreffer">https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git</a>) contains vagrant and ansible configuration to deploy and provision a single jenkins server with jenkins configuration as code (a.k.a. JCasC):</p>
+<ul>
+<li><a href="https://www.jenkins.io/" target="_blank" rel="noopener noreffer">Jenkins</a></li>
+<li><a href="https://www.jenkins.io/projects/jcasc/" target="_blank" rel="noopener noreffer">Jenkins Configuration as Code (a.k.a. JCasC) Plugin</a></li>
+</ul>
+<h2 id="disclaimer">DISCLAIMER</h2>
+<blockquote>
+<p>This implementation is intended for testing / PoC / playing purposes only, this solution is not scalable or secure enough for live / production environments. Use it at your own risk. Have fun!.</p>
+</blockquote>
+<h2 id="requirements">Requirements</h2>
+<p>The below requirements are needed to deploy and provision Jenkins VM.</p>
+<ul>
+<li><a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreffer">VirtualBox</a></li>
+<li><a href="https://www.vagrantup.com/" target="_blank" rel="noopener noreffer">Vagrant</a></li>
+<li><a href="https://www.ansible.com/" target="_blank" rel="noopener noreffer">Ansible</a></li>
+</ul>
+<h2 id="what-did-i-use-for-this">what did I use for this?</h2>
+<ul>
+<li>MacBook Pro 2015 CPU Core i5 8GB RAM</li>
+<li>OS GNU Linux/Debian 12 Bookworm 64bits</li>
+<li>VirtualBox 6.1.16</li>
+<li>Vagrant 2.2.14
+<ul>
+<li>Vagrant box debian/bullseye64</li>
+</ul>
+</li>
+<li>Ansible 2.10.8</li>
+</ul>
+<h2 id="included-content">Included content</h2>
+<ul>
+<li>Vagrantfile</li>
+<li>ansible.cfg</li>
+<li>Playbook.yml</li>
+<li>Roles
+<ul>
+<li>common</li>
+<li>jenkins</li>
+</ul>
+</li>
+</ul>
+<h3 id="vagrantfile">Vagrantfile</h3>
+<p>VM machine definition as follow:</p>
+<ul>
+<li>jenkins
+<ul>
+<li>2 vcpu</li>
+<li>1024 RAM</li>
+<li>192.168.33.12 VM ip address</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-to-build-it">How to build it</h2>
+<h3 id="jenkins">Jenkins</h3>
+<p>This VM deploy a single Jenkins server as follow (by ansible):</p>
+<ul>
+<li>Install Jenkins dependencies</li>
+<li>Copy Jenkins default configuration</li>
+<li>Create Jenkins home</li>
+<li>Create init.groove.d directory with the configuration file (<a href="https://www.jenkins.io/doc/book/managing/groovy-hook-scripts/" target="_blank" rel="noopener noreffer">Groovy Hook Scripts</a>) for modules instalation (JCasC among them) into jenkins home</li>
+<li>Copy jenkins.yml for JCasC and &ldquo;automagically&rdquo; configuration into jenkins home</li>
+<li>Install Jenkins</li>
+<li>Remove jenkins.yml</li>
+<li>Have fun!</li>
+</ul>
+<h3 id="clone-this-repository">Clone this repository</h3>
+<pre tabindex="0"><code>  $ git clone https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git
+</code></pre><h3 id="change-to-the-cloned-repository-directory">Change to the cloned repository directory</h3>
+<pre tabindex="0"><code>  $ cd jenkins-single-vagrant-ansible
+</code></pre><h3 id="create-vagrant-vm-and-deploy-jenkins">Create vagrant VM and deploy jenkins</h3>
+<p>To start up the VM</p>
+<pre tabindex="0"><code>  $ vagrant up
+</code></pre><blockquote>
+<p>Coffee time!. On a MacBook Pro 2015 and 100Mbps bandwidth it took ~6 minutes. Vagrant box downloading (base linux distro) not included.</p>
+</blockquote>
+<h3 id="check-the-vm">Check the VM</h3>
+<p>To connect to the VM (ssh)</p>
+<pre tabindex="0"><code>  $ vagrant ssh
+</code></pre><h3 id="connect-to-jenkins">Connect to Jenkins</h3>
+<p>To connect via web browser</p>
+<pre tabindex="0"><code>  http://192.168.33.12:8080/
+</code></pre><p><code>Username:</code> admin
+<code>Password:</code> admin</p>
+<h3 id="destroy-vagrant-vm">Destroy vagrant VM</h3>
+<p>To destroy the VM</p>
+<pre tabindex="0"><code>  $ vagrant destroy
+</code></pre><h2 id="author">Author</h2>
+<blockquote>
+<p>Rodolfo Sauce-Guinand - rrodolfos gmail com</p>
+</blockquote>
+</div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
