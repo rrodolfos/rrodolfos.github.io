@@ -5,39 +5,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
-    <title class="pjax-title">Configuring jenkins with ansible and Jenkins configuration as code on vagrant - Rodolfo Sauce-Guinand</title><meta name="Description" content="Configuring jenkins with ansible and Jenkins configuration as code on vagrant"><meta property="og:title" content="Configuring jenkins with ansible and Jenkins configuration as code on vagrant" />
-<meta property="og:description" content="Configuring jenkins with ansible and Jenkins configuration as code on vagrant" />
+    <title class="pjax-title">Configuring prestashop in a single server with ansible - Rodolfo Sauce-Guinand</title><meta name="Description" content="Configuring prestashop in a single server with ansible"><meta property="og:title" content="Configuring prestashop in a single server with ansible" />
+<meta property="og:description" content="Configuring prestashop in a single server with ansible" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://rrodolfos.github.io/posts/ansible_jenkins_jcasc/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-11-09T11:46:50+01:00" />
-<meta property="article:modified_time" content="2021-11-09T11:46:50+01:00" />
+<meta property="og:url" content="https://rrodolfos.github.io/posts/ansible_prestashop_single/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-14T19:34:12+01:00" />
+<meta property="article:modified_time" content="2022-03-14T19:34:12+01:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Configuring jenkins with ansible and Jenkins configuration as code on vagrant"/>
-<meta name="twitter:description" content="Configuring jenkins with ansible and Jenkins configuration as code on vagrant"/>
+<meta name="twitter:title" content="Configuring prestashop in a single server with ansible"/>
+<meta name="twitter:description" content="Configuring prestashop in a single server with ansible"/>
 <meta name="application-name" content="Rodolfo Sauce-Guinand">
 <meta name="apple-mobile-web-app-title" content="Rodolfo Sauce-Guinand">
 
 <meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://rrodolfos.github.io/posts/ansible_jenkins_jcasc/" /><link rel="next" href="https://rrodolfos.github.io/posts/ansible_prestashop_single/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://rrodolfos.github.io/posts/ansible_prestashop_single/" /><link rel="prev" href="https://rrodolfos.github.io/posts/ansible_jenkins_jcasc/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Configuring jenkins with ansible and Jenkins configuration as code on vagrant",
+        "headline": "Configuring prestashop in a single server with ansible",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/rrodolfos.github.io\/posts\/ansible_jenkins_jcasc\/"
-        },"genre": "posts","keywords": "ansible, jenkins, jcasc, vagrant","wordcount":  298 ,
-        "url": "https:\/\/rrodolfos.github.io\/posts\/ansible_jenkins_jcasc\/","datePublished": "2021-11-09T11:46:50+01:00","dateModified": "2021-11-09T11:46:50+01:00","publisher": {
+            "@id": "https:\/\/rrodolfos.github.io\/posts\/ansible_prestashop_single\/"
+        },"genre": "posts","keywords": "ansible, prestashop, single, vagrant","wordcount":  363 ,
+        "url": "https:\/\/rrodolfos.github.io\/posts\/ansible_prestashop_single\/","datePublished": "2022-03-14T19:34:12+01:00","dateModified": "2022-03-14T19:34:12+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"authors": [{
                     "@type": "Person",
                     "name": "Rodolfo"
-                }],"description": "Configuring jenkins with ansible and Jenkins configuration as code on vagrant"
+                }],"description": "Configuring prestashop in a single server with ansible"
     }
     </script></head>
 
@@ -57,7 +57,7 @@
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="#" onclick="return false;" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" title="Select Language" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/ansible_jenkins_jcasc/" selected>English</option><option value="/es/posts/ansible_jenkins_jcasc/">Español</option></select>
+                        <select class="language-select" title="Select Language" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/ansible_prestashop_single/" selected>English</option></select>
                     </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
                 </a></div>
@@ -76,7 +76,7 @@
         <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="#" onclick="return false;" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/posts/ansible_jenkins_jcasc/" selected>English</option><option value="/es/posts/ansible_jenkins_jcasc/">Español</option></select>
+                    <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/posts/ansible_prestashop_single/" selected>English</option></select>
                 </a></div>
     </div>
 </header>
@@ -90,19 +90,19 @@
             <div class="container"><div class="toc" id="toc-auto">
         <h2 class="toc-title">Contents</h2>
         <div class="toc-content" id="toc-content-auto"></div>
-    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Configuring jenkins with ansible and Jenkins configuration as code on vagrant</h1><div class="post-meta">
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Configuring prestashop in a single server with ansible</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://rrodolfos.github.io/authors/rodolfo'>Rodolfo</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/devops/"><i class="far fa-folder fa-fw"></i>devops</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-11-09">2021-11-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2021-11-09">2021-11-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;298 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;363 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
-        data-src="/posts/ansible_jenkins_jcasc/ansible_jenkins_jcasc.webp"
-        data-srcset="/posts/ansible_jenkins_jcasc/ansible_jenkins_jcasc.webp, /posts/ansible_jenkins_jcasc/ansible_jenkins_jcasc.webp 1.5x, /posts/ansible_jenkins_jcasc/ansible_jenkins_jcasc.webp 2x"
+        data-src="/posts/ansible_prestashop_single/ansible_prestashop_single.webp"
+        data-srcset="/posts/ansible_prestashop_single/ansible_prestashop_single.webp, /posts/ansible_prestashop_single/ansible_prestashop_single.webp 1.5x, /posts/ansible_prestashop_single/ansible_prestashop_single.webp 2x"
         data-sizes="auto"
-        alt="/posts/ansible_jenkins_jcasc/ansible_jenkins_jcasc.webp"
-        title="Configuring jenkins with ansible and Jenkins configuration as code on vagrant" height="500" width="1000"
+        alt="/posts/ansible_prestashop_single/ansible_prestashop_single.webp"
+        title="Configuring prestashop in a single server with ansible" height="500" width="1000"
     /></div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -118,29 +118,33 @@
         <li><a href="#vagrantfile">Vagrantfile</a></li>
       </ul>
     </li>
+    <li><a href="#architecture">Architecture</a></li>
     <li><a href="#how-to-build-it">How to build it</a>
       <ul>
-        <li><a href="#jenkins">Jenkins</a></li>
+        <li><a href="#prestashop">Prestashop</a></li>
         <li><a href="#clone-this-repository">Clone this repository</a></li>
         <li><a href="#change-to-the-cloned-repository-directory">Change to the cloned repository directory</a></li>
-        <li><a href="#create-vagrant-vm-and-deploy-jenkins">Create vagrant VM and deploy jenkins</a></li>
+        <li><a href="#create-vagrant-vm-and-deploy-prestashop">Create vagrant VM and deploy PrestaShop</a></li>
         <li><a href="#check-the-vm">Check the VM</a></li>
-        <li><a href="#connect-to-jenkins">Connect to Jenkins</a></li>
+        <li><a href="#connect-to-prestashop">Connect to PrestaShop</a></li>
         <li><a href="#destroy-vagrant-vm">Destroy vagrant VM</a></li>
       </ul>
     </li>
+    <li><a href="#notes">Notes</a></li>
     <li><a href="#author">Author</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="configuring-jenkins-with-ansible-and-jenkins-configuration-as-code-on-vagrant">Configuring jenkins with ansible and Jenkins configuration as code on vagrant</h1>
-<p>This repository (<a href="https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git" target="_blank" rel="noopener noreffer">https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git</a>) contains vagrant and ansible configuration to deploy and provision a single jenkins server with jenkins configuration as code (a.k.a. JCasC):</p>
+            </div><div class="content" id="content"><h1 id="configuring-prestashop-in-a-single-server-with-ansible">Configuring prestashop in a single server with ansible</h1>
+<p>This repository (<a href="https://github.com/rrodolfos/prestashop-nginx-single-vagrant-ansible.git" target="_blank" rel="noopener noreffer">https://github.com/rrodolfos/prestashop-nginx-single-vagrant-ansible.git</a>) contains vagrant and ansible configuration to deploy and provision a single PrestaShop server with mysql (mariadb), nginx and php (fpm):</p>
 <ul>
-<li><a href="https://www.jenkins.io/" target="_blank" rel="noopener noreffer">Jenkins</a></li>
-<li><a href="https://www.jenkins.io/projects/jcasc/" target="_blank" rel="noopener noreffer">Jenkins Configuration as Code (a.k.a. JCasC) Plugin</a></li>
+<li><a href="https://www.prestashop.com/" target="_blank" rel="noopener noreffer">Prestashop</a></li>
+<li><a href="https://mariadb.org/" target="_blank" rel="noopener noreffer">MariaDB</a> or <del><a href="https://www.mysql.com/" target="_blank" rel="noopener noreffer">MySQL</a></del></li>
+<li><a href="https://www.nginx.org/" target="_blank" rel="noopener noreffer">NGINX</a></li>
+<li><a href="https://www.php.net/" target="_blank" rel="noopener noreffer">php</a></li>
 </ul>
 <h2 id="disclaimer">DISCLAIMER</h2>
 <blockquote>
-<p>This implementation is intended for testing / PoC / playing purposes only, this solution is not scalable or secure enough for live / production environments. Use it at your own risk. Have fun!.</p>
+<p>This implementation is intended for testing / PoC / educational purposes only, this solution is not scalable or secure enough for live / production environments. Use it at your own risk. Have fun!.</p>
 </blockquote>
 <h2 id="requirements">Requirements</h2>
 <p>The below requirements are needed to deploy and provision Jenkins VM.</p>
@@ -148,77 +152,115 @@
 <li><a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreffer">VirtualBox</a></li>
 <li><a href="https://www.vagrantup.com/" target="_blank" rel="noopener noreffer">Vagrant</a></li>
 <li><a href="https://www.ansible.com/" target="_blank" rel="noopener noreffer">Ansible</a></li>
+<li><a href="https://docs.ansible.com/ansible/latest/collections/community/mysql/index.html" target="_blank" rel="noopener noreffer">MySQL collection for Ansible</a></li>
 </ul>
 <h2 id="what-did-i-use-for-this">what did I use for this?</h2>
 <ul>
 <li>MacBook Pro 2015 CPU Core i5 8GB RAM</li>
 <li>OS GNU Linux/Debian 12 Bookworm 64bits</li>
-<li>VirtualBox 6.1.16</li>
-<li>Vagrant 2.2.14
+<li>VirtualBox 6.1.32</li>
+<li>Vagrant 2.2.19
 <ul>
 <li>Vagrant box debian/bullseye64</li>
 </ul>
 </li>
-<li>Ansible 2.10.8</li>
+<li>Ansible 2.12.3</li>
+<li>MySQL collection for Ansible 2.1.0</li>
 </ul>
 <h2 id="included-content">Included content</h2>
 <ul>
 <li>Vagrantfile</li>
 <li>ansible.cfg</li>
+<li>Collections
+<ul>
+<li>mysql</li>
+</ul>
+</li>
 <li>Playbook.yml</li>
 <li>Roles
 <ul>
 <li>common</li>
-<li>jenkins</li>
+<li>prestashop</li>
 </ul>
 </li>
 </ul>
 <h3 id="vagrantfile">Vagrantfile</h3>
 <p>VM machine definition as follow:</p>
 <ul>
-<li>jenkins
+<li>prestashop
 <ul>
 <li>2 vcpu</li>
 <li>1024 RAM</li>
-<li>192.168.33.12 VM ip address</li>
+<li>192.168.33.13	 VM ip address</li>
 </ul>
 </li>
 </ul>
+<h2 id="architecture">Architecture</h2>
+<p><figure><a class="lightgallery" href="/posts/ansible_prestashop_single/ansible_prestashop_single_architecture.webp" title="Architecture Diagram" data-thumbnail="/posts/ansible_prestashop_single/ansible_prestashop_single_architecture.webp" data-sub-html="<h2>Architecture Diagram</h2><p>Architecture Diagram</p>">
+        <img
+            class="lazyload"
+            data-src="ansible_prestashop_single_architecture.webp"
+            data-srcset="/posts/ansible_prestashop_single/ansible_prestashop_single_architecture.webp, ansible_prestashop_single_architecture.webp 1.5x, /posts/ansible_prestashop_single/ansible_prestashop_single_architecture.webp 2x"
+            data-sizes="auto"
+            alt="/posts/ansible_prestashop_single/ansible_prestashop_single_architecture.webp"
+        />
+    </a><figcaption class="image-caption">Architecture Diagram</figcaption>
+    </figure></p>
 <h2 id="how-to-build-it">How to build it</h2>
-<h3 id="jenkins">Jenkins</h3>
-<p>This VM deploy a single Jenkins server as follow (by ansible):</p>
+<h3 id="prestashop">Prestashop</h3>
+<p>This VM deploy a single PrestaShop server with mariadb, nginx and php as follow (by ansible):</p>
 <ul>
-<li>Install Jenkins dependencies</li>
-<li>Copy Jenkins default configuration</li>
-<li>Create Jenkins home</li>
-<li>Create init.groove.d directory with the configuration file (<a href="https://www.jenkins.io/doc/book/managing/groovy-hook-scripts/" target="_blank" rel="noopener noreffer">Groovy Hook Scripts</a>) for modules instalation (JCasC among them) into jenkins home</li>
-<li>Copy jenkins.yml for JCasC and &ldquo;automagically&rdquo; configuration into jenkins home</li>
-<li>Install Jenkins</li>
-<li>Remove jenkins.yml</li>
+<li>Install php</li>
+<li>Install MariaDB
+<ul>
+<li>Create prestashop database</li>
+<li>Create prestashop user and its privileges</li>
+</ul>
+</li>
+<li>Install NGINX
+<ul>
+<li>Download and install prestashop</li>
+<li>Configure NGINX prestashop server</li>
+</ul>
+</li>
+<li>Print prestashop URL</li>
 <li>Have fun!</li>
 </ul>
 <h3 id="clone-this-repository">Clone this repository</h3>
-<pre tabindex="0"><code>  $ git clone https://github.com/rrodolfos/jenkins-single-vagrant-ansible.git
+<pre tabindex="0"><code>  $ git clone https://github.com/rrodolfos/prestashop-nginx-single-vagrant-ansible.git
 </code></pre><h3 id="change-to-the-cloned-repository-directory">Change to the cloned repository directory</h3>
-<pre tabindex="0"><code>  $ cd jenkins-single-vagrant-ansible
-</code></pre><h3 id="create-vagrant-vm-and-deploy-jenkins">Create vagrant VM and deploy jenkins</h3>
+<pre tabindex="0"><code>  $ cd prestashop-nginx-single-vagrant-ansible
+</code></pre><h3 id="create-vagrant-vm-and-deploy-prestashop">Create vagrant VM and deploy PrestaShop</h3>
 <p>To start up the VM</p>
 <pre tabindex="0"><code>  $ vagrant up
 </code></pre><blockquote>
-<p>Coffee time!. On a MacBook Pro 2015 and 100Mbps bandwidth it took ~6 minutes. Vagrant box downloading (base linux distro) not included.</p>
+<p>Coffee time!. On a MacBook Pro 2015 and 50Mbps bandwidth it took ~6 minutes. Vagrant box (base linux distro) downloading time not included.</p>
 </blockquote>
 <h3 id="check-the-vm">Check the VM</h3>
 <p>To connect to the VM (ssh)</p>
 <pre tabindex="0"><code>  $ vagrant ssh
-</code></pre><h3 id="connect-to-jenkins">Connect to Jenkins</h3>
-<p>To connect via web browser</p>
-<pre tabindex="0"><code>  http://192.168.33.12:8080/
-</code></pre><p><code>Username:</code> admin
-<code>Password:</code> admin</p>
+</code></pre><h3 id="connect-to-prestashop">Connect to PrestaShop</h3>
+<h4 id="shop">Shop</h4>
+<pre tabindex="0"><code>  http://prestashop.local
+</code></pre><h4 id="to-connect-as-a-customer-via-web-browser">To connect as a customer via web browser</h4>
+<pre tabindex="0"><code>  http://prestashop.local/en/login
+</code></pre><p><code>Username:</code> <a href="mailto:pub@prestashop.com" rel="">pub@prestashop.com</a>
+<code>Password:</code> 123456789</p>
+<h4 id="to-connect-as-a-administrator-employee-via-web-browser">To connect as a administrator (employee) via web browser</h4>
+<pre tabindex="0"><code>  http://prestashop.local/admin56
+</code></pre><p><code>Username:</code> <a href="mailto:john.doe@foo.foo" rel="">john.doe@foo.foo</a>
+<code>Password:</code> 0123456789</p>
 <h3 id="destroy-vagrant-vm">Destroy vagrant VM</h3>
 <p>To destroy the VM</p>
 <pre tabindex="0"><code>  $ vagrant destroy
-</code></pre><h2 id="author">Author</h2>
+</code></pre><h2 id="notes">Notes</h2>
+<ul>
+<li>Be sure the VM has the package <code>acl</code> is installed (Ansible should do itfor you ;-)</li>
+<li>To change paths, user names, passwords and prestashop installation values check:
+<code>prestashop-nginx-single-vagrant-ansible/provisioning/roles/prestashop/vars/main.yml</code></li>
+<li>Please feel free to let me know any question, error, improvement or opinion by email</li>
+</ul>
+<h2 id="author">Author</h2>
 <blockquote>
 <p>Rodolfo Sauce-Guinand - rrodolfos gmail com</p>
 </blockquote>
@@ -228,7 +270,7 @@
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2021-11-09</span>
+                <span>Updated on 2022-03-14</span>
             </div>
             <div class="post-info-license"></div>
         </div>
@@ -241,14 +283,13 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/ansible/">ansible</a>,&nbsp;<a href="/tags/jenkins/">jenkins</a>,&nbsp;<a href="/tags/jcasc/">jcasc</a>,&nbsp;<a href="/tags/vagrant/">vagrant</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/ansible/">ansible</a>,&nbsp;<a href="/tags/prestashop/">prestashop</a>,&nbsp;<a href="/tags/single/">single</a>,&nbsp;<a href="/tags/vagrant/">vagrant</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav">
-            <a href="/posts/ansible_prestashop_single/" class="next" rel="next" title="Configuring prestashop in a single server with ansible">Configuring prestashop in a single server with ansible<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/posts/ansible_jenkins_jcasc/" class="prev" rel="prev" title="Configuring jenkins with ansible and Jenkins configuration as code on vagrant"><i class="fas fa-angle-left fa-fw"></i>Configuring jenkins with ansible and Jenkins configuration as code on vagrant</a></div>
 </div>
 </article></div>
         </main><footer class="footer">
