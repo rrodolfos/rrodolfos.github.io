@@ -3,12 +3,33 @@
         <title>Tags - Etiqueta - Rodolfo Sauce-Guinand</title>
         <link>https://rrodolfos.github.io/es/tags/</link>
         <description>Tags - Etiqueta - Rodolfo Sauce-Guinand</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 09 Nov 2021 11:46:50 &#43;0100</lastBuildDate><atom:link href="https://rrodolfos.github.io/es/tags/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 14 Mar 2022 19:34:12 &#43;0100</lastBuildDate><atom:link href="https://rrodolfos.github.io/es/tags/" rel="self" type="application/rss+xml" /><item>
     <title>ansible</title>
     <link>https://rrodolfos.github.io/es/tags/ansible/</link>
-    <pubDate>Tue, 09 Nov 2021 11:46:50 &#43;0100</pubDate><author>
+    <pubDate>Mon, 14 Mar 2022 19:34:12 &#43;0100</pubDate><author>
         <name>Autor</name>
     </author><guid>https://rrodolfos.github.io/es/tags/ansible/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>prestashop</title>
+    <link>https://rrodolfos.github.io/es/tags/prestashop/</link>
+    <pubDate>Mon, 14 Mar 2022 19:34:12 &#43;0100</pubDate><author>
+        <name>Autor</name>
+    </author><guid>https://rrodolfos.github.io/es/tags/prestashop/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>single</title>
+    <link>https://rrodolfos.github.io/es/tags/single/</link>
+    <pubDate>Mon, 14 Mar 2022 19:34:12 &#43;0100</pubDate><author>
+        <name>Autor</name>
+    </author><guid>https://rrodolfos.github.io/es/tags/single/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
+    <title>vagrant</title>
+    <link>https://rrodolfos.github.io/es/tags/vagrant/</link>
+    <pubDate>Mon, 14 Mar 2022 19:34:12 &#43;0100</pubDate><author>
+        <name>Autor</name>
+    </author><guid>https://rrodolfos.github.io/es/tags/vagrant/</guid>
     <description><![CDATA[]]></description>
 </item><item>
     <title>jcasc</title>
@@ -23,13 +44,6 @@
     <pubDate>Tue, 09 Nov 2021 11:46:50 &#43;0100</pubDate><author>
         <name>Autor</name>
     </author><guid>https://rrodolfos.github.io/es/tags/jenkins/</guid>
-    <description><![CDATA[]]></description>
-</item><item>
-    <title>vagrant</title>
-    <link>https://rrodolfos.github.io/es/tags/vagrant/</link>
-    <pubDate>Tue, 09 Nov 2021 11:46:50 &#43;0100</pubDate><author>
-        <name>Autor</name>
-    </author><guid>https://rrodolfos.github.io/es/tags/vagrant/</guid>
     <description><![CDATA[]]></description>
 </item></channel>
 </rss>

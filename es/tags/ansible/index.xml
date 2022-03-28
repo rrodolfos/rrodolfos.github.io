@@ -3,7 +3,16 @@
         <title>ansible - Etiqueta - Rodolfo Sauce-Guinand</title>
         <link>https://rrodolfos.github.io/es/tags/ansible/</link>
         <description>ansible - Etiqueta - Rodolfo Sauce-Guinand</description>
-        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Tue, 09 Nov 2021 11:46:50 &#43;0100</lastBuildDate><atom:link href="https://rrodolfos.github.io/es/tags/ansible/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>es</language><lastBuildDate>Mon, 14 Mar 2022 19:34:12 &#43;0100</lastBuildDate><atom:link href="https://rrodolfos.github.io/es/tags/ansible/" rel="self" type="application/rss+xml" /><item>
+    <title>Configurando prestashop como servidor single con ansible</title>
+    <link>https://rrodolfos.github.io/es/posts/ansible_prestashop_single/</link>
+    <pubDate>Mon, 14 Mar 2022 19:34:12 &#43;0100</pubDate><author>
+                    <name>Rodolfo</name><uri>https://www.linkedin.com/in/rodolfosauceguinand/</uri><email>rrodolfos@gmail.com</email></author><guid>https://rrodolfos.github.io/es/posts/ansible_prestashop_single/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/ansible_prestashop_single.webp" referrerpolicy="no-referrer">
+            </div>Configurando prestashop como servidor single con ansible Este repositorio (https://github.com/rrodolfos/prestashop-nginx-single-vagrant-ansible.git) contiene la configuración de vagrant y ansible para desplegar y provisionar PrestaShop como servidor single con mysql (mariadb, nginx y php (fpm):
+ Prestashop MariaDB or MySQL NGINX php  ADVERTENCIA  Esta implementación esta destinada solo con el propósito de pruebas / PoC / educación, esta solución no es escalable o segura para ambientes de producción. Úselo a su propio riesgo.]]></description>
+</item><item>
     <title>Configurando jenkins con ansible y jenkins configuration as code en vagrant</title>
     <link>https://rrodolfos.github.io/es/posts/ansible_jenkins_jcasc/</link>
     <pubDate>Tue, 09 Nov 2021 11:46:50 &#43;0100</pubDate><author>

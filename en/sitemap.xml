@@ -29,7 +29,15 @@
                     hreflang="en"
                     href="https://rrodolfos.github.io/categories/"
                     /></url><url>
-            <loc>https://rrodolfos.github.io/posts/ansible_prestashop_single/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod></url><url>
+            <loc>https://rrodolfos.github.io/posts/ansible_prestashop_single/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/posts/ansible_prestashop_single/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/posts/ansible_prestashop_single/"
+                    /></url><url>
             <loc>https://rrodolfos.github.io/categories/devops/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="es"
@@ -48,7 +56,15 @@
                     hreflang="en"
                     href="https://rrodolfos.github.io/posts/"
                     /></url><url>
-            <loc>https://rrodolfos.github.io/tags/prestashop/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod></url><url>
+            <loc>https://rrodolfos.github.io/tags/prestashop/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/tags/prestashop/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/tags/prestashop/"
+                    /></url><url>
             <loc>https://rrodolfos.github.io/authors/rodolfo/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="es"
@@ -67,7 +83,15 @@
                     hreflang="en"
                     href="https://rrodolfos.github.io/"
                     /></url><url>
-            <loc>https://rrodolfos.github.io/tags/single/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod></url><url>
+            <loc>https://rrodolfos.github.io/tags/single/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="es"
+                        href="https://rrodolfos.github.io/es/tags/single/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="en"
+                    href="https://rrodolfos.github.io/tags/single/"
+                    /></url><url>
             <loc>https://rrodolfos.github.io/tags/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="es"
