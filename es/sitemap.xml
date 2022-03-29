@@ -2,7 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://rrodolfos.github.io/es/tags/ansible/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
+            <loc>https://rrodolfos.github.io/es/tags/ansible/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://rrodolfos.github.io/tags/ansible/"
@@ -11,7 +11,7 @@
                     hreflang="es"
                     href="https://rrodolfos.github.io/es/tags/ansible/"
                     /></url><url>
-            <loc>https://rrodolfos.github.io/es/authors/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
+            <loc>https://rrodolfos.github.io/es/authors/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://rrodolfos.github.io/authors/"
@@ -20,7 +20,7 @@
                     hreflang="es"
                     href="https://rrodolfos.github.io/es/authors/"
                     /></url><url>
-            <loc>https://rrodolfos.github.io/es/categories/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
+            <loc>https://rrodolfos.github.io/es/categories/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
                         href="https://rrodolfos.github.io/categories/"
@@ -28,6 +28,123 @@
                     rel="alternate"
                     hreflang="es"
                     href="https://rrodolfos.github.io/es/categories/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/posts/ansible_prestashop_scalable/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/posts/ansible_prestashop_scalable/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/posts/ansible_prestashop_scalable/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/categories/devops/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/categories/devops/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/categories/devops/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/tags/mariadb/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/tags/mariadb/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/tags/mariadb/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/tags/mysql/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/tags/mysql/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/tags/mysql/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/tags/nfs/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/tags/nfs/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/tags/nfs/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/posts/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/posts/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/posts/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/tags/prestashop/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/tags/prestashop/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/tags/prestashop/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/tags/redis/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/tags/redis/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/tags/redis/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/authors/rodolfo/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/authors/rodolfo/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/authors/rodolfo/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/tags/scalable/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/tags/scalable/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/tags/scalable/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/tags/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/tags/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/tags/"
+                    /></url><url>
+            <loc>https://rrodolfos.github.io/es/tags/vagrant/</loc><lastmod>2022-03-14T19:37:52&#43;01:00</lastmod><xhtml:link
+                        rel="alternate"
+                        hreflang="en"
+                        href="https://rrodolfos.github.io/tags/vagrant/"
+                        /><xhtml:link
+                    rel="alternate"
+                    hreflang="es"
+                    href="https://rrodolfos.github.io/es/tags/vagrant/"
                     /></url><url>
             <loc>https://rrodolfos.github.io/es/posts/ansible_prestashop_single/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
@@ -38,69 +155,6 @@
                     hreflang="es"
                     href="https://rrodolfos.github.io/es/posts/ansible_prestashop_single/"
                     /></url><url>
-            <loc>https://rrodolfos.github.io/es/categories/devops/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://rrodolfos.github.io/categories/devops/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="es"
-                    href="https://rrodolfos.github.io/es/categories/devops/"
-                    /></url><url>
-            <loc>https://rrodolfos.github.io/es/tags/mariadb/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://rrodolfos.github.io/tags/mariadb/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="es"
-                    href="https://rrodolfos.github.io/es/tags/mariadb/"
-                    /></url><url>
-            <loc>https://rrodolfos.github.io/es/tags/mysql/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://rrodolfos.github.io/tags/mysql/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="es"
-                    href="https://rrodolfos.github.io/es/tags/mysql/"
-                    /></url><url>
-            <loc>https://rrodolfos.github.io/es/posts/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://rrodolfos.github.io/posts/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="es"
-                    href="https://rrodolfos.github.io/es/posts/"
-                    /></url><url>
-            <loc>https://rrodolfos.github.io/es/tags/prestashop/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://rrodolfos.github.io/tags/prestashop/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="es"
-                    href="https://rrodolfos.github.io/es/tags/prestashop/"
-                    /></url><url>
-            <loc>https://rrodolfos.github.io/es/authors/rodolfo/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://rrodolfos.github.io/authors/rodolfo/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="es"
-                    href="https://rrodolfos.github.io/es/authors/rodolfo/"
-                    /></url><url>
-            <loc>https://rrodolfos.github.io/es/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://rrodolfos.github.io/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="es"
-                    href="https://rrodolfos.github.io/es/"
-                    /></url><url>
             <loc>https://rrodolfos.github.io/es/tags/single/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
                         rel="alternate"
                         hreflang="en"
@@ -109,24 +163,6 @@
                     rel="alternate"
                     hreflang="es"
                     href="https://rrodolfos.github.io/es/tags/single/"
-                    /></url><url>
-            <loc>https://rrodolfos.github.io/es/tags/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://rrodolfos.github.io/tags/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="es"
-                    href="https://rrodolfos.github.io/es/tags/"
-                    /></url><url>
-            <loc>https://rrodolfos.github.io/es/tags/vagrant/</loc><lastmod>2022-03-14T19:34:12&#43;01:00</lastmod><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://rrodolfos.github.io/tags/vagrant/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="es"
-                    href="https://rrodolfos.github.io/es/tags/vagrant/"
                     /></url><url>
             <loc>https://rrodolfos.github.io/es/posts/ansible_jenkins_jcasc/</loc><lastmod>2021-11-09T11:46:50&#43;01:00</lastmod><xhtml:link
                         rel="alternate"

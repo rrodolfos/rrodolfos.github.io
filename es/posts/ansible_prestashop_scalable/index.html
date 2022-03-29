@@ -5,39 +5,39 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noodp" />
-    <title class="pjax-title">Configurando prestashop como servidor single con ansible - Rodolfo Sauce-Guinand</title><meta name="Description" content="Configurando prestashop como servidor single con ansible"><meta property="og:title" content="Configurando prestashop como servidor single con ansible" />
-<meta property="og:description" content="Configurando prestashop como servidor single con ansible" />
+    <title class="pjax-title">Configurando prestashop en multiple servidores stateless (escalable) con ansible - Rodolfo Sauce-Guinand</title><meta name="Description" content="Configurando prestashop en multiple servidores stateless (escalable) con ansible"><meta property="og:title" content="Configurando prestashop en multiple servidores stateless (escalable) con ansible" />
+<meta property="og:description" content="Configurando prestashop en multiple servidores stateless (escalable) con ansible" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://rrodolfos.github.io/es/posts/ansible_prestashop_single/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-14T19:34:12+01:00" />
-<meta property="article:modified_time" content="2022-03-14T19:34:12+01:00" />
+<meta property="og:url" content="https://rrodolfos.github.io/es/posts/ansible_prestashop_scalable/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-14T19:37:52+01:00" />
+<meta property="article:modified_time" content="2022-03-14T19:37:52+01:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Configurando prestashop como servidor single con ansible"/>
-<meta name="twitter:description" content="Configurando prestashop como servidor single con ansible"/>
+<meta name="twitter:title" content="Configurando prestashop en multiple servidores stateless (escalable) con ansible"/>
+<meta name="twitter:description" content="Configurando prestashop en multiple servidores stateless (escalable) con ansible"/>
 <meta name="application-name" content="Rodolfo Sauce-Guinand">
 <meta name="apple-mobile-web-app-title" content="Rodolfo Sauce-Guinand">
 
 <meta name="theme-color" content="#f8f8f8"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://rrodolfos.github.io/es/posts/ansible_prestashop_single/" /><link rel="prev" href="https://rrodolfos.github.io/es/posts/ansible_jenkins_jcasc/" /><link rel="next" href="https://rrodolfos.github.io/es/posts/ansible_prestashop_scalable/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://rrodolfos.github.io/es/posts/ansible_prestashop_scalable/" /><link rel="prev" href="https://rrodolfos.github.io/es/posts/ansible_prestashop_single/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
     <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
     <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Configurando prestashop como servidor single con ansible",
+        "headline": "Configurando prestashop en multiple servidores stateless (escalable) con ansible",
         "inLanguage": "es",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/rrodolfos.github.io\/es\/posts\/ansible_prestashop_single\/"
-        },"genre": "posts","keywords": "ansible, prestashop, single, mysql, mariadb, vagrant","wordcount":  386 ,
-        "url": "https:\/\/rrodolfos.github.io\/es\/posts\/ansible_prestashop_single\/","datePublished": "2022-03-14T19:34:12+01:00","dateModified": "2022-03-14T19:34:12+01:00","publisher": {
+            "@id": "https:\/\/rrodolfos.github.io\/es\/posts\/ansible_prestashop_scalable\/"
+        },"genre": "posts","keywords": "ansible, prestashop, scalable, mysql, mariadb, nfs, redis, vagrant","wordcount":  684 ,
+        "url": "https:\/\/rrodolfos.github.io\/es\/posts\/ansible_prestashop_scalable\/","datePublished": "2022-03-14T19:37:52+01:00","dateModified": "2022-03-14T19:37:52+01:00","publisher": {
             "@type": "Organization",
             "name": "Autor"},"authors": [{
                     "@type": "Person",
                     "name": "Rodolfo"
-                }],"description": "Configurando prestashop como servidor single con ansible"
+                }],"description": "Configurando prestashop en multiple servidores stateless (escalable) con ansible"
     }
     </script></head>
 
@@ -57,7 +57,7 @@
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/es/posts/"> Publicaciones </a><a class="menu-item" href="/es/tags/"> Etiquetas </a><a class="menu-item" href="/es/categories/"> Categorías </a><span class="menu-item delimiter"></span><a href="#" onclick="return false;" class="menu-item language" title="Selecciona el lenguage">Español<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" title="Select Language" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/ansible_prestashop_single/">English</option><option value="/es/posts/ansible_prestashop_single/" selected>Español</option></select>
+                        <select class="language-select" title="Select Language" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/ansible_prestashop_scalable/">English</option><option value="/es/posts/ansible_prestashop_scalable/" selected>Español</option></select>
                     </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Cambia el tema">
                     <i class="fas fa-adjust fa-fw"></i>
                 </a></div>
@@ -76,7 +76,7 @@
         <div class="menu" id="menu-mobile"><a class="menu-item" href="/es/posts/" title="">Publicaciones</a><a class="menu-item" href="/es/tags/" title="">Etiquetas</a><a class="menu-item" href="/es/categories/" title="">Categorías</a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Cambia el tema">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="#" onclick="return false;" class="menu-item" title="Selecciona el lenguage">Español<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/posts/ansible_prestashop_single/">English</option><option value="/es/posts/ansible_prestashop_single/" selected>Español</option></select>
+                    <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/posts/ansible_prestashop_scalable/">English</option><option value="/es/posts/ansible_prestashop_scalable/" selected>Español</option></select>
                 </a></div>
     </div>
 </header>
@@ -90,19 +90,19 @@
             <div class="container"><div class="toc" id="toc-auto">
         <h2 class="toc-title">Contenido</h2>
         <div class="toc-content" id="toc-content-auto"></div>
-    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Configurando prestashop como servidor single con ansible</h1><div class="post-meta">
+    </div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle", "normal")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Configurando prestashop en multiple servidores stateless (escalable) con ansible</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://rrodolfos.github.io/es/authors/rodolfo'>Rodolfo</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">incluido en <a href="/es/categories/devops/"><i class="far fa-folder fa-fw"></i>devops</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;386 palabras&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutos&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;684 palabras&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutos&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
-        data-src="/es/posts/ansible_prestashop_single/ansible_prestashop_single.webp"
-        data-srcset="/es/posts/ansible_prestashop_single/ansible_prestashop_single.webp, /es/posts/ansible_prestashop_single/ansible_prestashop_single.webp 1.5x, /es/posts/ansible_prestashop_single/ansible_prestashop_single.webp 2x"
+        data-src="/es/posts/ansible_prestashop_scalable/ansible_prestashop_scalable.webp"
+        data-srcset="/es/posts/ansible_prestashop_scalable/ansible_prestashop_scalable.webp, /es/posts/ansible_prestashop_scalable/ansible_prestashop_scalable.webp 1.5x, /es/posts/ansible_prestashop_scalable/ansible_prestashop_scalable.webp 2x"
         data-sizes="auto"
-        alt="/es/posts/ansible_prestashop_single/ansible_prestashop_single.webp"
-        title="Configurando prestashop como servidor single con ansible" height="500" width="1000"
+        alt="/es/posts/ansible_prestashop_scalable/ansible_prestashop_scalable.webp"
+        title="Configurando prestashop en multiple servidores stateless (escalable) con ansible" height="500" width="1000"
     /></div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contenido</span>
@@ -119,35 +119,43 @@
       </ul>
     </li>
     <li><a href="#arquitectura">Arquitectura</a></li>
+    <li><a href="#en-pocas-palabras">En pocas palabras</a>
+      <ul>
+        <li><a href="#shop-vm">shop VM</a></li>
+        <li><a href="#prestashop-12-vms">prestashop-{1,2} VMs</a></li>
+      </ul>
+    </li>
     <li><a href="#como-construirlo">Como construirlo</a>
       <ul>
-        <li><a href="#prestashop">Prestashop</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#prestashop12">Prestashop{1,2}</a></li>
         <li><a href="#clonar-este-repositorio">Clonar este repositorio</a></li>
         <li><a href="#cambiar-al-directorio-del-repositorio-clonado">Cambiar al directorio del repositorio clonado</a></li>
-        <li><a href="#crear-la-vm-en-vagrant-y-desplegar-prestashop">Crear la VM en vagrant y desplegar PrestaShop</a></li>
-        <li><a href="#chequear-la-vm">Chequear la VM</a></li>
+        <li><a href="#crear-las-vms-en-vagrant-y-desplegar-prestashop">Crear las VMs en vagrant y desplegar PrestaShop</a></li>
+        <li><a href="#chequear-las-vms">Chequear las VMs</a></li>
         <li><a href="#conectarse-a-prestashop">Conectarse a PrestaShop</a></li>
-        <li><a href="#destruir-la-vm-en-vagrant">Destruir la VM en vagrant</a></li>
       </ul>
     </li>
     <li><a href="#notas">Notas</a></li>
     <li><a href="#author">Author</a></li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="configurando-prestashop-como-servidor-single-con-ansible">Configurando prestashop como servidor single con ansible</h1>
-<p>Este repositorio (<a href="https://github.com/rrodolfos/prestashop-nginx-single-vagrant-ansible.git" target="_blank" rel="noopener noreffer">https://github.com/rrodolfos/prestashop-nginx-single-vagrant-ansible.git</a>) contiene la configuración de vagrant y ansible para desplegar y provisionar PrestaShop como servidor single con mysql (mariadb, nginx y php (fpm):</p>
+            </div><div class="content" id="content"><h1 id="configurando-prestashop-en-multiple-servidores-stateless-escalable-con-ansible">Configurando prestashop en multiple servidores stateless (escalable) con ansible</h1>
+<p>Este repositorio (<a href="https://github.com/rrodolfos/prestashop-nginx-scalable-vagrant-ansible.git" target="_blank" rel="noopener noreffer">https://github.com/rrodolfos/prestashop-nginx-scalable-vagrant-ansible.git</a>) contiene la configuración de vagrant y ansible para desplegar y provisionar prestashop en multiple servidores stateless (escalable) con mysql (mariadb), redis, nfs, nginx y php (fpm):</p>
 <ul>
 <li><a href="https://www.prestashop.com/" target="_blank" rel="noopener noreffer">Prestashop</a></li>
 <li><a href="https://mariadb.org/" target="_blank" rel="noopener noreffer">MariaDB</a> or <del><a href="https://www.mysql.com/" target="_blank" rel="noopener noreffer">MySQL</a></del></li>
+<li><a href="https://redis.io/" target="_blank" rel="noopener noreffer">Redis</a></li>
+<li><a href="https://datatracker.ietf.org/doc/html/rfc3010" target="_blank" rel="noopener noreffer">NFS (Network File System)</a></li>
 <li><a href="https://www.nginx.org/" target="_blank" rel="noopener noreffer">NGINX</a></li>
 <li><a href="https://www.php.net/" target="_blank" rel="noopener noreffer">php</a></li>
 </ul>
 <h2 id="advertencia">ADVERTENCIA</h2>
 <blockquote>
-<p>Esta implementación esta destinada solo con el propósito de pruebas / PoC / educación, esta solución no es escalable o segura para ambientes de producción. Úselo a su propio riesgo. Happy hacking!.</p>
+<p>Esta implementación esta destinada solo con el propósito de pruebas / PoC / educación, esta solución no es <del>escalable o</del> segura para ambientes de producción. Úselo a su propio riesgo. Happy hacking!.</p>
 </blockquote>
 <h2 id="requerimientos">Requerimientos</h2>
-<p>Los siguientes requerimientos son necesarios para desplegar y provisionar la VM PrestaShop.</p>
+<p>Los siguientes requerimientos son necesarios para desplegar y provisionar las VMs Shop y PrestaShop.</p>
 <ul>
 <li><a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreffer">VirtualBox</a></li>
 <li><a href="https://www.vagrantup.com/" target="_blank" rel="noopener noreffer">Vagrant</a></li>
@@ -181,40 +189,99 @@
 <ul>
 <li>common</li>
 <li>prestashop</li>
+<li>shop</li>
 </ul>
 </li>
 </ul>
 <h3 id="vagrantfile">Vagrantfile</h3>
-<p>La definición de la VM es la siguiente:</p>
+<p>La definición de las VMs es la siguiente:</p>
 <ul>
-<li>prestashop
+<li>
+<p>shop</p>
 <ul>
 <li>2 vcpu</li>
 <li>1024 RAM</li>
-<li>192.168.33.13 VM dirección ip</li>
+<li>192.168.33.13 VM ip address</li>
+</ul>
+</li>
+<li>
+<p>prestashop-1</p>
+<ul>
+<li>2 vcpu</li>
+<li>1024 RAM</li>
+<li>192.168.33.14 VM ip address</li>
+</ul>
+</li>
+<li>
+<p>prestashop-2</p>
+<ul>
+<li>2 vcpu</li>
+<li>1024 RAM</li>
+<li>192.168.33.15 VM ip address</li>
 </ul>
 </li>
 </ul>
 <h2 id="arquitectura">Arquitectura</h2>
-<p><figure><a class="lightgallery" href="/es/posts/ansible_prestashop_single/ansible_prestashop_single_architecture.webp" title="Diagrama de Arquitectura" data-thumbnail="/es/posts/ansible_prestashop_single/ansible_prestashop_single_architecture.webp" data-sub-html="<h2>Diagrama de arquitectura</h2><p>Diagrama de Arquitectura</p>">
+<p><figure><a class="lightgallery" href="/es/posts/ansible_prestashop_scalable/ansible_prestashop_scalable_architecture.webp" title="Diagrama de Arquitectura" data-thumbnail="/es/posts/ansible_prestashop_scalable/ansible_prestashop_scalable_architecture.webp" data-sub-html="<h2>Diagrama de arquitectura</h2><p>Diagrama de Arquitectura</p>">
         <img
             class="lazyload"
-            data-src="ansible_prestashop_single_architecture.webp"
-            data-srcset="/es/posts/ansible_prestashop_single/ansible_prestashop_single_architecture.webp, ansible_prestashop_single_architecture.webp 1.5x, /es/posts/ansible_prestashop_single/ansible_prestashop_single_architecture.webp 2x"
+            data-src="ansible_prestashop_scalable_architecture.webp"
+            data-srcset="/es/posts/ansible_prestashop_scalable/ansible_prestashop_scalable_architecture.webp, ansible_prestashop_scalable_architecture.webp 1.5x, /es/posts/ansible_prestashop_scalable/ansible_prestashop_scalable_architecture.webp 2x"
             data-sizes="auto"
-            alt="/es/posts/ansible_prestashop_single/ansible_prestashop_single_architecture.webp"
+            alt="/es/posts/ansible_prestashop_scalable/ansible_prestashop_scalable_architecture.webp"
         />
     </a><figcaption class="image-caption">Diagrama de arquitectura</figcaption>
     </figure></p>
+<h2 id="en-pocas-palabras">En pocas palabras</h2>
+<h3 id="shop-vm">shop VM</h3>
+<p>Esta VM contiene todos los servicios de estado y un servidor NGINX proxy reverso. Esta máquina actuará como una especie de estructura en la nube para los nodos de prestashop sin estado. Los servicios incluidos en esta VM son:</p>
+<ul>
+<li>NGINX como proxy reverso</li>
+<li>Redis como manejador de sesiones para php</li>
+<li>NFS comp almacenamiento de archivos web comunes de prestashopas PrestaShop</li>
+<li>MariaDB como es usual</li>
+</ul>
+<blockquote>
+<p>Nota: PrestaShop no utiliza sesiones en su ligar utiliza cookies. Sin embargo en <a href="https://devdocs.prestashop.com/1.7/scale/" target="_blank" rel="noopener noreffer">How to make PrestaShop scale</a> su documentación oficial mencionand Redis para almacenar las sesiones, entonces aquí lo tienes. Si por casualidad conoces el por que, por favor házmelo saber.</p>
+</blockquote>
+<h3 id="prestashop-12-vms">prestashop-{1,2} VMs</h3>
+<p>Estas VMs tienen todos los servicios sin estado de PrestaShop. Contienen un servidor web con php y algunos archivos web. Los servicios incluidos en estas VM son:</p>
+<ul>
+<li>NGINX como servidor web
+<ul>
+<li>Los archivos web con estado son almacenados en NFS</li>
+</ul>
+</li>
+<li>php-fpm
+<ul>
+<li>Las sesiones son manejadas por Redis</li>
+</ul>
+</li>
+</ul>
 <h2 id="como-construirlo">Como construirlo</h2>
-<h3 id="prestashop">Prestashop</h3>
-<p>Esto despliega (con ansible) una VM con PrestaShop como servidor single con mariadb, nginx y php como sigue:</p>
+<h3 id="shop">Shop</h3>
+<p>Esto despliega (con ansible) servicios con estado para servidores PrestaShop con mariadb, redis, nfs, nginx y php como sigue:</p>
+<ul>
+<li>Instalar MariaDB (servidor)</li>
+<li>Instalar NGINX y configurar con proxy reverso</li>
+<li>Instalar NFS (servidor) y configurar exports</li>
+<li>Instalar y configurar Redis</li>
+</ul>
+<h3 id="prestashop12">Prestashop{1,2}</h3>
+<p>These VMs deploy stateless PrestaShop nodes (servers) with nginx and php as follow (by ansible):
+Estas VMs despliegan (con ansible) nodos PrestaShop sin estado con nginx y php como sigue:</p>
 <ul>
 <li>Instalar php</li>
-<li>Instalar MariaDB
+<li>Instalar Redis tools (cliente)</li>
+<li>Instalar MariaDB (cliente)
 <ul>
 <li>Crear la base de datos prestashop</li>
 <li>Crear el usuario prestashop y sus privilegios</li>
+</ul>
+</li>
+<li>Instalar NFS (cliente)
+<ul>
+<li>Montar los archivos compartidos de prestashop</li>
 </ul>
 </li>
 <li>Instalar NGINX
@@ -223,42 +290,58 @@
 <li>Configurar el servidor prestashop en NGINX</li>
 </ul>
 </li>
-<li>Mostrar el URL de prestashop</li>
+<li>Mostrar el URL de shop</li>
+<li>Mostrar los URLs de prestashop{1,2}</li>
 <li>Happy hacking!</li>
 </ul>
 <h3 id="clonar-este-repositorio">Clonar este repositorio</h3>
-<pre tabindex="0"><code>  $ git clone https://github.com/rrodolfos/prestashop-nginx-single-vagrant-ansible.git
+<pre tabindex="0"><code>  $ git clone https://github.com/rrodolfos/prestashop-nginx-scalable-vagrant-ansible.git
 </code></pre><h3 id="cambiar-al-directorio-del-repositorio-clonado">Cambiar al directorio del repositorio clonado</h3>
-<pre tabindex="0"><code>  $ cd prestashop-nginx-single-vagrant-ansible
-</code></pre><h3 id="crear-la-vm-en-vagrant-y-desplegar-prestashop">Crear la VM en vagrant y desplegar PrestaShop</h3>
-<p>Para niciar la VM</p>
+<pre tabindex="0"><code>  $ cd prestashop-nginx-scalable-vagrant-ansible
+</code></pre><h3 id="crear-las-vms-en-vagrant-y-desplegar-prestashop">Crear las VMs en vagrant y desplegar PrestaShop</h3>
+<p>To start up the VM</p>
 <pre tabindex="0"><code>  $ vagrant up
 </code></pre><blockquote>
-<p>Momento para un café!. En un MacBook Pro 2015 y 50Mbps de ancho de banda tomó ~6 minutos. No está incluido el tiempo de la descarga del Vagrant box (linux distro base).</p>
+<p>Momento para un café!. En un MacBook Pro 2015 y 50Mbps de ancho de banda tomó ~15 minutos. No está incluido el tiempo de la descarga del Vagrant box (linux distro base).</p>
 </blockquote>
-<h3 id="chequear-la-vm">Chequear la VM</h3>
+<h3 id="chequear-las-vms">Chequear las VMs</h3>
 <p>Para conectarse a la VM (ssh)</p>
-<pre tabindex="0"><code>  $ vagrant ssh
+<pre tabindex="0"><code>  $ vagrant ssh {shop,prestashop-1,prestashop-2}
 </code></pre><h3 id="conectarse-a-prestashop">Conectarse a PrestaShop</h3>
 <h4 id="tienda">Tienda</h4>
-<pre tabindex="0"><code>  http://prestashop.local
+<pre tabindex="0"><code>  http://shop.local
 </code></pre><h4 id="para-conectarse-como-cliente-via-navegador-web">Para conectarse como cliente via navegador web</h4>
-<pre tabindex="0"><code>  http://prestashop.local/en/login
+<pre tabindex="0"><code>  http://shop.local/en/login
 </code></pre><p><code>Username:</code> <a href="mailto:pub@prestashop.com" rel="">pub@prestashop.com</a>
 <code>Password:</code> 123456789</p>
 <h4 id="para-conectarse-como-administrador-empleado-via-navegador-web">Para conectarse como administrador (empleado)) via navegador web</h4>
-<pre tabindex="0"><code>  http://prestashop.local/admin56
+<pre tabindex="0"><code>  http://shop.local/admin56
 </code></pre><p><code>Username:</code> <a href="mailto:john.doe@foo.foo" rel="">john.doe@foo.foo</a>
 <code>Password:</code> 0123456789</p>
-<h3 id="destruir-la-vm-en-vagrant">Destruir la VM en vagrant</h3>
-<p>Para destruir la VM</p>
+<h4 id="destruir-las-vms-en-vagrant">Destruir las VMs en vagrant</h4>
+<p>Para destruir las VMs</p>
 <pre tabindex="0"><code>  $ vagrant destroy
 </code></pre><h2 id="notas">Notas</h2>
 <ul>
-<li>Asegurar que la VM tiene el paquete <code>acl</code> instalado (Ansible debe hacerlo por tí ;-)</li>
-<li>Para cambiar rutas, nmbre de usuarios, contraseñas y valores de instalación para prestashop revisar:
-<code>prestashop-nginx-single-vagrant-ansible/provisioning/roles/prestashop/vars/main.yml</code></li>
-<li>Por favor sientete libre de hacerme saber cualquier pregunta, error u opinión por email</li>
+<li>
+<p>Asegurar que la VM tiene el paquete <code>acl</code> instalado (Ansible debe hacerlo por tí ;-)</p>
+</li>
+<li>
+<p>Para cambiar rutas, nmbre de usuarios, contraseñas y valores de instalación para prestashop revisar:
+<code>prestashop-nginx-scalable-vagrant-ansible/provisioning/vars/main.yml</code></p>
+</li>
+<li>
+<p>Cuando use <code>$ vagrant ssh</code>. Debe tener el nombre de la VM. Eg:</p>
+<pre tabindex="0"><code>$ vagrant ssh shop
+$ vagrant ssh prestashop-1
+$ vagrant ssh prestashop-2
+</code></pre></li>
+<li>
+<p>Para mostrar los cookies de prestashop revisar: <code>http://shop.local/admin56/cookies.php</code></p>
+</li>
+<li>
+<p>Por favor sientete libre de hacerme saber cualquier pregunta, error u opinión por email</p>
+</li>
 </ul>
 <h2 id="author">Author</h2>
 <blockquote>
@@ -283,14 +366,13 @@
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/es/tags/ansible/">ansible</a>,&nbsp;<a href="/es/tags/prestashop/">prestashop</a>,&nbsp;<a href="/es/tags/single/">single</a>,&nbsp;<a href="/es/tags/mysql/">mysql</a>,&nbsp;<a href="/es/tags/mariadb/">mariadb</a>,&nbsp;<a href="/es/tags/vagrant/">vagrant</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/es/tags/ansible/">ansible</a>,&nbsp;<a href="/es/tags/prestashop/">prestashop</a>,&nbsp;<a href="/es/tags/scalable/">scalable</a>,&nbsp;<a href="/es/tags/mysql/">mysql</a>,&nbsp;<a href="/es/tags/mariadb/">mariadb</a>,&nbsp;<a href="/es/tags/nfs/">nfs</a>,&nbsp;<a href="/es/tags/redis/">redis</a>,&nbsp;<a href="/es/tags/vagrant/">vagrant</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Regresar</a></span>&nbsp;|&nbsp;<span><a href="/es/">Inicio</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/es/posts/ansible_jenkins_jcasc/" class="prev" rel="prev" title="Configurando jenkins con ansible y jenkins configuration as code en vagrant"><i class="fas fa-angle-left fa-fw"></i>Configurando jenkins con ansible y jenkins configuration as code en vagrant</a>
-            <a href="/es/posts/ansible_prestashop_scalable/" class="next" rel="next" title="Configurando prestashop en multiple servidores stateless (escalable) con ansible">Configurando prestashop en multiple servidores stateless (escalable) con ansible<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/es/posts/ansible_prestashop_single/" class="prev" rel="prev" title="Configurando prestashop como servidor single con ansible"><i class="fas fa-angle-left fa-fw"></i>Configurando prestashop como servidor single con ansible</a></div>
 </div>
 </article></div>
         </main><footer class="footer">

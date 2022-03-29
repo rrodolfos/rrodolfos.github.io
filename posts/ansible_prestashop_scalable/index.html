@@ -31,7 +31,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/rrodolfos.github.io\/posts\/ansible_prestashop_scalable\/"
-        },"genre": "posts","keywords": "ansible, prestashop, scalable, mysql, mariadb, nfs, redis, vagrant","wordcount":  618 ,
+        },"genre": "posts","keywords": "ansible, prestashop, scalable, mysql, mariadb, nfs, redis, vagrant","wordcount":  620 ,
         "url": "https:\/\/rrodolfos.github.io\/posts\/ansible_prestashop_scalable\/","datePublished": "2022-03-14T19:37:52+01:00","dateModified": "2022-03-14T19:37:52+01:00","publisher": {
             "@type": "Organization",
             "name": "Author"},"authors": [{
@@ -57,7 +57,7 @@
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="#" onclick="return false;" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" title="Select Language" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/ansible_prestashop_scalable/" selected>English</option></select>
+                        <select class="language-select" title="Select Language" id="language-select-desktop" onchange="location = this.value;"><option value="/posts/ansible_prestashop_scalable/" selected>English</option><option value="/es/posts/ansible_prestashop_scalable/">Español</option></select>
                     </a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
                     <i class="fas fa-adjust fa-fw"></i>
                 </a></div>
@@ -76,7 +76,7 @@
         <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="#" onclick="return false;" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="#" onclick="return false;" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/posts/ansible_prestashop_scalable/" selected>English</option></select>
+                    <select class="language-select" title="Select Language" onchange="location = this.value;"><option value="/posts/ansible_prestashop_scalable/" selected>English</option><option value="/es/posts/ansible_prestashop_scalable/">Español</option></select>
                 </a></div>
     </div>
 </header>
@@ -94,7 +94,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><i class="author fas fa-user-circle fa-fw"></i><span class='screen-reader-text'>  </span><a href='https://rrodolfos.github.io/authors/rodolfo'>Rodolfo</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-category">category <a href="/categories/devops/"><i class="far fa-folder fa-fw"></i>devops</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;618 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;620 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -156,7 +156,7 @@
 <p>This implementation is intended for testing / PoC / educational purposes only, this solution is not <del>scalable or</del> secure enough for live / production environments. Use it at your own risk. Have fun!.</p>
 </blockquote>
 <h2 id="requirements">Requirements</h2>
-<p>The below requirements are needed to deploy and provision PrestaShop VM.</p>
+<p>The below requirements are needed to deploy and provision Shop and PrestaShop VMs.</p>
 <ul>
 <li><a href="https://www.virtualbox.org/" target="_blank" rel="noopener noreffer">VirtualBox</a></li>
 <li><a href="https://www.vagrantup.com/" target="_blank" rel="noopener noreffer">Vagrant</a></li>
@@ -195,7 +195,7 @@
 </li>
 </ul>
 <h3 id="vagrantfile">Vagrantfile</h3>
-<p>VM mac	hine definition as follow:</p>
+<p>VM machines definition as follow:</p>
 <ul>
 <li>
 <p>shop</p>
@@ -239,11 +239,11 @@
 <ul>
 <li>NGINX as reverse proxy</li>
 <li>Redis as session handler for php</li>
-<li>NFS as PrestaShop common web files</li>
+<li>NFS as PrestaShop common web files storage</li>
 <li>MariaDB as usual</li>
 </ul>
 <blockquote>
-<p>Note: PrestaShop does not use php sessions instead it uses cookies. However in <a href="https://devdocs.prestashop.com/1.7/scale/" target="_blank" rel="noopener noreffer">How to make PrestaShop scale</a> official documentation they does mention Redis to store sessions so there it is. If by any chance you know why please let me know.</p>
+<p>Note: PrestaShop does not use php sessions instead it uses cookies. However, in <a href="https://devdocs.prestashop.com/1.7/scale/" target="_blank" rel="noopener noreffer">How to make PrestaShop scale</a> official documentation they does mention Redis to store sessions so there it is. If by any chance you know why please let me know.</p>
 </blockquote>
 <h3 id="prestashop-12-vms">prestashop-{1,2} VMs</h3>
 <p>These VMs have all stateless PrestaShop services. They contain a web server with php, and some web files. Services included in these VMs are:</p>
@@ -331,7 +331,7 @@
 <code>prestashop-nginx-scalable-vagrant-ansible/provisioning/vars/main.yml</code></p>
 </li>
 <li>
-<p>When use <code>$ vagrant ssh</code>. It sholud have a vm name. Eg:</p>
+<p>When use <code>$ vagrant ssh</code>. It sholud have a VM name. Eg:</p>
 <pre tabindex="0"><code>$ vagrant ssh shop
 $ vagrant ssh prestashop-1
 $ vagrant ssh prestashop-2
