@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>nfs - Tag - Rodolfo Sauce-Guinand</title>
+        <link>https://rrodolfos.github.io/tags/nfs/</link>
+        <description>nfs - Tag - Rodolfo Sauce-Guinand</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 14 Mar 2022 19:37:52 &#43;0100</lastBuildDate><atom:link href="https://rrodolfos.github.io/tags/nfs/" rel="self" type="application/rss+xml" /><item>
+    <title>Configuring prestashop in multiple stateless servers (scalable) with ansible</title>
+    <link>https://rrodolfos.github.io/posts/ansible_prestashop_scalable/</link>
+    <pubDate>Mon, 14 Mar 2022 19:37:52 &#43;0100</pubDate><author>
+                    <name>Rodolfo</name><uri>https://www.linkedin.com/in/rodolfosauceguinand/</uri><email>rrodolfos@gmail.com</email></author><guid>https://rrodolfos.github.io/posts/ansible_prestashop_scalable/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/ansible_prestashop_scalable.webp" referrerpolicy="no-referrer">
+            </div>Configuring prestashop in multiple stateless servers (scalable) with ansible This repository (https://github.com/rrodolfos/prestashop-nginx-scalable-vagrant-ansible.git) contains vagrant and ansible configuration to deploy and provision prestashop in multiple stateless servers (scalable) with mysql (mariadb), redis, nfs, nginx and php (fpm):
+ Prestashop MariaDB or MySQL Redis NFS (Network File System) NGINX php  DISCLAIMER  This implementation is intended for testing / PoC / educational purposes only, this solution is not scalable or secure enough for live / production environments.]]></description>
+</item></channel>
+</rss>
